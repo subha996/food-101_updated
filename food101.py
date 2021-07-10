@@ -159,19 +159,19 @@ else:
     col1.warning("No image uploaded. You can use sample imgaes from below list")
     file2 = col1.selectbox('Select from sample images', options=sam_lst)
     if file2 == 'Icecream':
-        file = 'samples\icecream.jpg'
+        file = 'icecream.jpg'
         with st.spinner('Hold on your food is getting cooked...'):
             predict_class(file, greet)
     elif file2 == 'Pizza':
-        file = 'samples\pizza.jpg'
+        file = 'pizza.jpg'
         with st.spinner('Hold on your food is getting cooked...'):
             predict_class(file, greet)
     elif file2 == 'Waffels': 
-        file = 'samples\waffels.jpg'
+        file = 'waffels.jpg'
         with st.spinner('Hold on your food is getting cooked...'):
             predict_class(file, greet)    
     elif file2 == 'Steak':
-        file = 'samples\steak.jpg'
+        file = 'steak.jpg'
         with st.spinner('Hold on your food is getting cooked...'):    
             predict_class(file, greet) 
     else:
